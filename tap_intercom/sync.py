@@ -439,6 +439,7 @@ def sync_endpoint(client, #pylint: disable=too-many-branches
         offset = offset + rec_count
         page = page + 1
         i = i + 1
+        break
 
     # Return total_records across all pages
     LOGGER.info('Synced Stream: {}, pages: {}, total records: {}'.format(
